@@ -32,6 +32,16 @@ See the [Study Overview](./docs/en/index.md) for the research design,
 the [Run Protocol](./docs/en/run.md) for freeze and execution procedures,
 and the [Test Guide](./docs/en/test.md) for engineering validation.
 
+## Related Theory
+
+The related [Individuation Theory](https://github.com/structural-explainability/se-theory-individuation)
+develops formal constructions concerning individuation and sameness across
+presentations.
+This pilot examines independently documented individuation accounts and
+provides evidence relevant to evaluating those constructions.
+
+The pilot's protocol and results determine what has been tested.
+
 ## Scope of the initial implementation
 
 The Python runner implements a deliberately **thin baseline**:
