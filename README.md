@@ -80,13 +80,13 @@ uv run --locked ty check
 
 - [README.md](./generalization/README.md)
 
-## Inputs
-
-## Generated Artifacts
-
 ## Annotations
 
 [.annotations/annotations.md](./.annotations/annotations.md)
+
+## Changelog
+
+[Changelog](./CHANGELOG.md)
 
 ## Citation
 
