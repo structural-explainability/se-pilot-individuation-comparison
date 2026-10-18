@@ -1,0 +1,64 @@
+# ============================================================
+# SE_MANIFEST.toml (Repository Declaration)
+# ============================================================
+
+schema = "se-manifest-schema"
+schema_version = "0.5.1"
+schema_url = "https://raw.githubusercontent.com/structural-explainability/se-manifest-schema/main/manifest-schema.toml"
+
+[meta]
+framework = "Structural Explainability"
+framework_url = "https://github.com/structural-explainability"
+purpose = "Declare a research pilot that tests source-faithful comparison of individuation accounts."
+
+[repository]
+name = "se-pilot-individuation-comparison"
+organization = "structural-explainability"
+class = "pilot"
+kind = "individuation-comparison"
+status = "active"
+since = "2026"
+summary = "Pilot of independent source-grounded comparison of competing individuation accounts."
+
+[layer]
+space = "structural-explainability"
+role = "pilot"
+
+[depends]
+required = []
+optional = []
+
+[provides]
+artifacts = [
+  "source-inventory",
+  "account-transcriptions",
+  "alignment-record",
+  "comparison-evaluator",
+  "comparison-report",
+  "independent-review-protocol",
+]
+
+[scope]
+includes = [
+  "source-faithful transcription of disputed regulatory interpretations",
+  "explicitly justified comparison of aligned claims",
+  "provisional difference witnesses and insufficiency findings",
+  "scientific adequacy and external review procedures",
+]
+excludes = [
+  "canonical individuation or identity theory",
+  "metaphysical identification of regulatory source aggregation with strict identity",
+  "legal adjudication or independent scientific determination of the correct account",
+  "automatic derivation of a unique cause of a disagreement",
+  "scientific acceptance based on Python tests alone",
+]
+
+[validation]
+entrypoint = "uv run --locked python -m se_pilot_individuation_comparison validate cases/summit-petroleum"
+
+[citation]
+cff = "CITATION.cff"
+preferred = "CITATION.cff"
+
+[traceability]
+identifier_map = "Case-local source IDs in cases/*/sources.toml; account claims cite source IDs and document locators."

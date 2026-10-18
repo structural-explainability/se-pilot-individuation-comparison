@@ -1,0 +1,13 @@
+[alignment]
+status = "proposed"
+rationale = "The two claims answer the same yes/no question about whether functional interrelatedness may inform regulatory adjacency; this is an alignment of legal propositions, not a mapping between whole partitions."
+
+[[pairs]]
+id = "adjacency-factor"
+left_account = "epa"
+left_claim = "functional_adjacency_factor"
+right_account = "summit"
+right_claim = "functional_adjacency_factor"
+question_id = "may_consider_functional_relationship"
+status = "proposed"
+justification = "Both arguments concern admissibility of functional interrelatedness in interpreting adjacent properties in Title V source determination."

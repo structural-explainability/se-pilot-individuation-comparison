@@ -1,0 +1,12 @@
+[case]
+id = "summit-petroleum"
+title = "Summit Petroleum Corp. v. EPA (6th Cir. 2012)"
+status = "draft"
+question = "May functional interrelatedness inform the interpretation of adjacent properties in addition to their physical proximity under the disputed Title V source regulation?"
+setting = "Contested 40 C.F.R. 71.2 Title V regulatory interpretation in Summit Petroleum Corp. v. EPA"
+granularity = "Regulatory source aggregation, not strict identity of physical facilities"
+
+[subjects]
+common_description = "Summit's natural-gas sweetening plant and sour-gas wells as described in the administrative and judicial record"
+common_carrier_status = "proposed"
+limitations = "A shared case description is not a proven complete atom-to-atom mapping, an exhaustive facility census, or a partition."

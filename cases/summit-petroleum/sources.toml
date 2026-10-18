@@ -1,0 +1,26 @@
+# Inventories sources, NOT claims of independent source review or legal correctness.
+# SHA256 values may be added after the exact source copy is preserved.
+
+[[sources]]
+id = "epa_brief_2011"
+title = "Brief for Respondents, Summit Petroleum Corp. v. EPA"
+url = "https://archive.epa.gov/ogc/briefs/web/pdf/09-4348.pdf"
+issued = "2011-06-07"
+role = "party_primary"
+note = "EPA's own published appellate position; audit exact page/paragraph before freezing."
+
+[[sources]]
+id = "epa_determination_2010"
+title = "Summit Petroleum Corporation Single Source Determination"
+url = "https://www.epa.gov/title-v-operating-permits/summit-petroleum-corporation-single-source-determination"
+issued = "2010-10-18"
+role = "party_primary"
+note = "EPA page links the original determination; must preserve and audit the specific document."
+
+[[sources]]
+id = "court_opinion_2012"
+title = "Summit Petroleum Corp. v. EPA, 690 F.3d 733 (6th Cir. 2012)"
+url = "https://law.justia.com/cases/federal/appellate-courts/ca6/10-4572/10-4572-2012-08-07.html"
+issued = "2012-08-07"
+role = "court_opinion_and_secondary_party_report"
+note = "Source of provisional report of Summit's argument; cannot be held-out independent validation of that same transcription."

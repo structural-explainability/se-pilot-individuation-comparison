@@ -1,0 +1,15 @@
+[account]
+id = "summit"
+party = "Summit Petroleum Corporation"
+status = "secondary_source_transcription"
+primary_source_review_completed = false
+
+[[claims]]
+id = "functional_adjacency_factor"
+question_id = "may_consider_functional_relationship"
+answer = false
+assertion = "Functional interrelatedness does not establish the regulatory adjacency requirement; the criterion must be understood through physical/geographical proximity."
+evidence_class = "court_reported"
+source_ids = ["court_opinion_2012"]
+locator = "Sixth Circuit opinion (Aug. 7, 2012), majority introduction and section analyzing parties' constructions of 'adjacent'; ORIGINAL SUMMIT BRIEF NOT YET AUDITED."
+status = "provisional"

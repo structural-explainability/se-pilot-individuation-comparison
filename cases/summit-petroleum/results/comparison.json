@@ -1,0 +1,48 @@
+{
+  "case_id": "summit-petroleum",
+  "comparisons": [
+    {
+      "comparison": "recorded_difference",
+      "interpretation_limit": "A difference of attributed answers is not a causal explanation, adjudication, proof of regulatory source partitions, or strict identity claim.",
+      "left": {
+        "account": "epa",
+        "answer": true,
+        "claim": "functional_adjacency_factor",
+        "locator": "Respondents' brief (June 7, 2011), argument discussing 'adjacent' and interrelatedness, around brief p. 27; exact text/page to be source-audited.",
+        "source_ids": [
+          "epa_brief_2011"
+        ]
+      },
+      "limitations": [
+        "alignment_not_independently_reviewed",
+        "left_claim_not_source_audited",
+        "right_claim_not_source_audited",
+        "right_claim_not_from_party_primary_source",
+        "epa_primary_source_review_incomplete",
+        "summit_primary_source_review_incomplete"
+      ],
+      "pair_id": "adjacency-factor",
+      "question_id": "may_consider_functional_relationship",
+      "right": {
+        "account": "summit",
+        "answer": false,
+        "claim": "functional_adjacency_factor",
+        "locator": "Sixth Circuit opinion (Aug. 7, 2012), majority introduction and section analyzing parties' constructions of 'adjacent'; ORIGINAL SUMMIT BRIEF NOT YET AUDITED.",
+        "source_ids": [
+          "court_opinion_2012"
+        ]
+      },
+      "witness_status": "provisional"
+    }
+  ],
+  "independent_validation": "NOT_COMPLETED",
+  "input_sha256": {
+    "accounts/epa.toml": "bb44c8e42b5bcbe198585ec4bbe2833f0f692da249f04dae20c7656c69a8e4d7",
+    "accounts/summit.toml": "83afdb6954a0952475db2857c1ba0d2c9726807af43d80522e51c0bb1882b5f3",
+    "alignment.toml": "9fc7ff7cc74f870d4b84b03a96548c10cbb5f9a7562e0464fd6b9034ef5e1ab4",
+    "scope.toml": "57720fed5b393a2aacfa6dc3961f24bcd3430752df6485f49fca7507337ecb10",
+    "sources.toml": "3f3a507f591e5ec6f6e2d6db6f7392e258bb7f98bc7c0b126c8d4605b592bad6"
+  },
+  "method": "aligned_binary_proposition_baseline_v1",
+  "scientific_adequacy": "OPEN"
+}

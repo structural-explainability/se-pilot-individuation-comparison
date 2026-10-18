@@ -1,0 +1,36 @@
+# ============================================================
+# CITATION.cff (How to cite this project)
+# ============================================================
+# REQ.UNIVERSAL: Professional open projects SHOULD include this file.
+# May reference upstream dependencies, but must not refer to downstream.
+# USAGE: See https://citation-file-format.github.io/ for details.
+# check with:
+# uvx cffconvert --validate
+
+cff-version: "1.2.0"
+message: "If you use this work, please cite it using the metadata in CITATION.cff."
+type: software
+
+title: "SE Pilot: Individuation Account Comparison"
+version: "0.1.0"
+date-released: "2026-10-18"
+
+authors:
+  - family-names: Case
+    given-names: Denise M.
+    orcid: "https://orcid.org/0000-0001-6165-7389"
+    affiliation: "Northwest Missouri State University, School of Computer Science and Information Systems, Maryville, MO, USA"
+
+repository-code: "https://github.com/structural-explainability/se-pilot-individuation-comparison"
+url: "https://github.com/structural-explainability/se-pilot-individuation-comparison"
+license: MIT
+
+abstract: >
+  An experimental, noncanonical comparison of source-grounded individuation accounts.
+
+keywords:
+  - structural-explainability
+  - individuation
+  - comparison
+  - source-grounded
+  - reproducibility

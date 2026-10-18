@@ -1,0 +1,15 @@
+[account]
+id = "epa"
+party = "United States Environmental Protection Agency"
+status = "draft_source_transcription"
+primary_source_review_completed = false
+
+[[claims]]
+id = "functional_adjacency_factor"
+question_id = "may_consider_functional_relationship"
+answer = true
+assertion = "Functional interrelatedness may be considered alongside physical proximity when evaluating adjacency under the relevant source regulation."
+evidence_class = "party_primary"
+source_ids = ["epa_brief_2011"]
+locator = "Respondents' brief (June 7, 2011), argument discussing 'adjacent' and interrelatedness, around brief p. 27; exact text/page to be source-audited."
+status = "provisional"

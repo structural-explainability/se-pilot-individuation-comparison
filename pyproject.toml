@@ -1,0 +1,84 @@
+# ============================================================
+# pyproject.toml (Python project configuration)
+# ============================================================
+# Updated: 2026-10-16
+#
+# REQ: All Python src/ projects SHOULD include pyproject.toml.
+# WHAT: Defines project identity, dependencies, and build configuration.
+# WHY: Keeps Python project metadata and package requirements together.
+# CUSTOM: Update project identity, dependencies, and package paths.
+
+# ============================================================
+# === SECTION: PROJECT IDENTITY ===
+# ============================================================
+
+[project]
+name = "se-pilot-individuation-comparison"
+description = "Evidence-grounded pilot for comparing individuation-relevant claims."
+version = "0.1.0"
+license-files = ["LICENSE"]                                                                                          # Updated: 2026-09-24
+readme = "README.md"
+requires-python = ">=3.14"
+
+# ============================================================
+# === SECTION: PROJECT RUNTIME DEPENDENCIES ===
+# ============================================================
+
+dependencies = ["packageurl-python"]
+
+# ============================================================
+# === SECTION: DEVELOPMENT AND DOCUMENTATION DEPENDENCIES ===
+# ============================================================
+# These packages support developing, testing, and documenting the project.
+# They are not required to execute the project code.
+
+[dependency-groups]
+# WHY: Development and documentation tools support maintaining, validating,
+#      and documenting the project without becoming runtime dependencies.
+
+dev = [
+    # REQ.DEV.DEPS: External packages used for linting, testing, type checking, etc.
+    "pytest>=9",  # WHY: Test framework for unit and integration tests.
+    "pytest-cov", # WHY: Test coverage reporting for quality metrics and CI gating.
+    "ruff",       # WHY: Fast linting and formatting for Python code.
+    "ty",         # WHY: Type checking for static analysis and type safety.
+]
+docs = [
+    # REQ.DOCS.DEPS: External packages used to generate project documentation.
+    "zensical",
+    "mkdocstrings[python]", # WHY: Auto-generate API docs from docstrings.
+]
+
+[project.urls]
+Changelog = "https://github.com/structural-explainability/se-pilot-individuation-comparison/blob/main/CHANGELOG.md"
+Documentation = "https://structural-explainability.github.io/se-pilot-individuation-comparison/"
+Homepage = "https://github.com/structural-explainability/se-pilot-individuation-comparison"
+Issues = "https://github.com/structural-explainability/se-pilot-individuation-comparison/issues"
+Repository = "https://github.com/structural-explainability/se-pilot-individuation-comparison"
+
+# ============================================================
+# SECTION 2: TOOL CONFIGURATION (Professional basics)
+# ============================================================
+
+# === UV (PYTHON ENVIRONMENT AND DEPENDENCY MANAGEMENT) ===
+
+[tool.uv]
+# WHY: Install all repository tooling with the canonical `uv sync`.
+default-groups = "all"
+
+# WHY: Give a bit of time to find hijacked releases before installing.
+# CUSTOM: Should match `uv run prek update --freeze --cooldown-days 7`.
+exclude-newer = "7 days"
+
+# ============================================================
+# SECTION 3: BUILD SYSTEM
+# ============================================================
+#
+# REQ: A build system MUST be declared for package discovery.
+# REQ: All importable code MUST live under src/.
+# WHY src/ layout: Prevents accidental imports from the repo root;
+# ensures consistent behavior across IDEs, tests, CI, and PyPI.
+
+[build-system]
+requires = ["uv_build>=0.9.0,<0.11.0"]
+build-backend = "uv_build"
