@@ -41,7 +41,8 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
   - **MAJOR** - breaking changes
   - **MINOR** - backward-compatible features
   - **PATCH** - fixes, documentation, tests, tooling
-- Versions are driven by git tags. Tag `vX.Y.Z` to release.
+- Keep project version metadata and release tags consistent.
+  Tag `vX.Y.Z` to release.
 
 ### Freezes
 
@@ -58,7 +59,7 @@ Follow these steps exactly when creating a new release.
 
 1.1. `CITATION.cff` - update `version` and `date-released`
 1.2. `CHANGELOG.md` - add section, move unreleased entries, update links
-1.3. `pyproject.toml` - update build system `fallback-version`
+1.3. `pyproject.toml` - update `[project].version`
 
 ### Task 2. Validate
 
